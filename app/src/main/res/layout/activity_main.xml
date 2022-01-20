@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FC34A"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/username_bg"
+        android:hint="Username"
+        android:padding="10dp"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_marginTop="6dp"
+
+        android:background="@drawable/email_bg"
+        android:hint="Email"
+        android:padding="10dp"
+
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/password_bg"
+
+        android:hint="Password"
+        android:padding="10dp"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:text="next"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="20dp" />
+
+    <ImageView
+        android:id="@+id/img_owl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/owl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_owl"
+        android:layout_centerHorizontal="true"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
